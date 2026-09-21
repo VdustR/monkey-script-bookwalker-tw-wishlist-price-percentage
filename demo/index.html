@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>願望清單價格比例示意</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f4f5f7;
+        color: #24262b;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Noto Sans TC",
+          sans-serif;
+      }
+      header {
+        background: #15171b;
+        color: white;
+        padding: 22px 0;
+      }
+      .shell {
+        width: min(1040px, calc(100% - 48px));
+        margin: auto;
+      }
+      .brand {
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+      .brand span {
+        color: #ff5b57;
+      }
+      main {
+        padding: 28px 0 48px;
+      }
+      .notice {
+        margin-bottom: 18px;
+        border: 1px solid #f2d487;
+        border-radius: 10px;
+        background: #fff8dd;
+        padding: 12px 16px;
+        color: #72530a;
+        font-size: 14px;
+        font-weight: 650;
+      }
+      h1 {
+        margin: 0 0 20px;
+        font-size: 27px;
+      }
+      .wishlist {
+        overflow: hidden;
+        border: 1px solid #dfe1e6;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 7px 24px rgb(20 26 40 / 7%);
+      }
+      .book {
+        display: grid;
+        grid-template-columns: 108px 1fr 200px;
+        gap: 22px;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #e8e9ec;
+      }
+      .book:last-child {
+        border-bottom: 0;
+      }
+      .cover {
+        width: 88px;
+        height: 118px;
+        border-radius: 5px;
+        background-image: url("./fictional-book-covers.png");
+        background-repeat: no-repeat;
+        background-size: 300% 100%;
+        box-shadow: 0 4px 10px rgb(25 31 40 / 18%);
+      }
+      .cover:nth-child(1) {
+        background-position: left center;
+      }
+      .book:nth-child(2) .cover {
+        background-position: center center;
+      }
+      .book:nth-child(3) .cover {
+        background-position: right center;
+      }
+      .title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 750;
+      }
+      .meta {
+        color: #777b84;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .price {
+        text-align: right;
+      }
+      .txt_del {
+        display: block;
+        color: #858991;
+        font-size: 14px;
+        text-decoration: line-through;
+      }
+      .sale {
+        display: block;
+        margin: 4px 0;
+        color: #e53935;
+        font-size: 20px;
+        font-weight: 800;
+      }
+      footer {
+        margin-top: 14px;
+        color: #858991;
+        font-size: 12px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="shell brand">FICTIONAL <span>BOOKS</span></div>
+    </header>
+    <main class="shell">
+      <div class="notice">示意畫面：書名、作者、價格與書封均為虛構資料，不代表任何實際商品。</div>
+      <h1>我的願望清單</h1>
+      <section class="wishlist" aria-label="虛構願望清單">
+        <article class="book">
+          <div class="cover" role="img" aria-label="虛構夜間列車書封"></div>
+          <div>
+            <div class="title">月台盡頭的慢車</div>
+            <div class="meta">範例作者 A<br />虛構出版</div>
+          </div>
+          <div class="price">
+            <span class="txt_del">原價：400元</span><span class="sale">特價：280元</span>
+          </div>
+        </article>
+        <article class="book">
+          <div class="cover" role="img" aria-label="虛構溫室書封"></div>
+          <div>
+            <div class="title">星期日的玻璃溫室</div>
+            <div class="meta">範例作者 B<br />虛構出版</div>
+          </div>
+          <div class="price">
+            <span class="txt_del">原價：360元</span><span class="sale">特價：288元</span>
+          </div>
+        </article>
+        <article class="book">
+          <div class="cover" role="img" aria-label="虛構燈塔書封"></div>
+          <div>
+            <div class="title">潮汐寄來的信</div>
+            <div class="meta">範例作者 C<br />虛構出版</div>
+          </div>
+          <div class="price">
+            <span class="txt_del">原價：500元</span><span class="sale">特價：325元</span>
+          </div>
+        </article>
+      </section>
+      <footer>本頁為本機測試 fixture，未連線至 BOOK☆WALKER。</footer>
+    </main>
+    <script src="../dist/bookwalker-wishlist-price-percentage.user.js"></script>
+  </body>
+</html>

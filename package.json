@@ -1,0 +1,17 @@
+{
+  "name": "monkey-script-bookwalker-tw-wishlist-price-percentage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vp pack",
+    "check": "vp check",
+    "test": "vp test"
+  },
+  "devDependencies": {
+    "happy-dom": "latest",
+    "typescript": "^7.0.2",
+    "vite-plus": "^0.3.3"
+  },
+  "packageManager": "pnpm@11.25.0"
+}
