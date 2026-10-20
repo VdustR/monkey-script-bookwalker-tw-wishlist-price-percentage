@@ -11,7 +11,7 @@
   "devDependencies": {
     "happy-dom": "latest",
     "typescript": "^7.0.2",
-    "vite-plus": "^0.3.3"
+    "vite-plus": "^1.1.0"
   },
   "packageManager": "pnpm@11.25.0"
 }
