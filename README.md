@@ -25,7 +25,7 @@
 
 ## 開發
 
-需求：Node.js 24 以上、pnpm 11。
+Requirements: Node.js `^22.18.0 || ^24.11.0 || >=26.0.0` and pnpm 11.
 
 ```bash
 pnpm install
